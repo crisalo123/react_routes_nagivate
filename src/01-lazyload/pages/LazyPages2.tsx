@@ -9,3 +9,4 @@ export const LazyPages2 = () => {
 }
 
 
+export default LazyPages2
