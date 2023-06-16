@@ -31,11 +31,12 @@ export const routes : typesRoutes[] = [
     path: "lazy2",
     Component: lazy2,
     name: "Lazy-2",
-  },
+  }, 
   {
     to: "/lazy3",
     path: "lazy3",
     Component: lazy3,
     name: "Lazy-3",
   },
+
 ];
