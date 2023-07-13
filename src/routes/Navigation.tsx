@@ -4,6 +4,13 @@ import { BrowserRouter } from "react-router-dom";
 import { Routes, Route, NavLink, Navigate } from "react-router-dom";
 
 import logo from "../logo.svg";
+import {
+  FormikAbstraction,
+  FormikBasicPage,
+  FormikComponent,
+  FormikYupPage,
+  RegisterPage,
+} from "../03-forms/pages";
 
 export const Navigation = () => {
   return (
@@ -14,20 +21,45 @@ export const Navigation = () => {
           <ul>
             <li>
               <NavLink
-                to="/home"
+                to="/register"
                 className={({ isActive }) => (isActive ? "nav-active" : "")}
               >
-                {" "}
-                Home
+                Register Page
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/formik-basic"
                 className={({ isActive }) => (isActive ? "nav-active" : "")}
               >
-                {" "}
-                About
+                Formik Basic
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/formik-yup-page"
+                className={({ isActive }) => (isActive ? "nav-active" : "")}
+              >
+                Formik yup page
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/formik-component"
+                className={({ isActive }) => (isActive ? "nav-active" : "")}
+              >
+                Formik Component
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/formik-abstraction"
+                className={({ isActive }) => (isActive ? "nav-active" : "")}
+              >
+                Formik Abstraction
               </NavLink>
             </li>
 
@@ -43,9 +75,11 @@ export const Navigation = () => {
           </ul>
         </nav>
         <Routes>
-          <Route path="about" element={<h1>About Page</h1>} />
-          <Route path="users" element={<h1>User Page</h1>} />
-          <Route path="home" element={<h1>Home page</h1>} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/formik-basic" element={<FormikBasicPage />} />
+          <Route path="/formik-yup-page" element={<FormikYupPage />} />
+          <Route path="/formik-component" element={<FormikComponent />} />
+          <Route path="/formik-abstraction" element={<FormikAbstraction />} />
           <Route path="/*" element={<Navigate to="/home" replace />} />
         </Routes>
       </div>
