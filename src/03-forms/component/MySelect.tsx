@@ -7,6 +7,7 @@ interface Props {
   //todo: esto es un comodin que puede añadir cualquier cantidad de parametros adiciolaes cosa
   [x: string]: any;
 }
+
 export const MySelect = ({ label, ...props }: Props) => {
   const [field] = useField(props);
 
