@@ -1,0 +1,26 @@
+[
+  {
+    "type": "input",
+    "name": "firsName",
+    "placeholder": "CristianDev",
+    "label": "firsName",
+    "value": "juan carlos"
+  },
+
+  {
+    "type": "input",
+    "name": "lastName",
+    "placeholder": "Apellidos",
+    "label": "lastName",
+    "value": "arturo"
+  },
+
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "placeholder": "Select",
+    "label": "Favorite Game",
+    "value": "",
+    "option": ["Super ball", "Mario", "Soccer"]
+  }
+]

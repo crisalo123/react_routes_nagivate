@@ -41,7 +41,9 @@ export const FormikComponent = () => {
         })}
       >
         {/* esa exprecion de formik es pasada como una funcion hija del Formik */}
-        {(formik) => (
+        {(formik) => ( 
+
+          
           <Form noValidate>
             <label htmlFor="firsName">Firs Name</label>
 
